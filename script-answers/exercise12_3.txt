@@ -1,0 +1,27 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240424221354
+Username: DESKTOP-P10ALDR\weeti
+RunAs User: DESKTOP-P10ALDR\weeti
+Configuration Name: 
+Machine: DESKTOP-P10ALDR (Microsoft Windows NT 10.0.19045.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 14076
+PSVersion: 5.1.19041.4291
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.4291
+BuildVersion: 10.0.19041.4291
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is script-answers/exercise12_3.txt
+PS D:\Programming\github\part12-containers-applications> docker run -it ubuntu bash
+root@2a948aa9771c:/# exit
+exit
+PS D:\Programming\github\part12-containers-applications> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20240424221832
+**********************

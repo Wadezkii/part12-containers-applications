@@ -1,0 +1,61 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240424221057
+Username: DESKTOP-P10ALDR\weeti
+RunAs User: DESKTOP-P10ALDR\weeti
+Configuration Name: 
+Machine: DESKTOP-P10ALDR (Microsoft Windows NT 10.0.19045.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 14076
+PSVersion: 5.1.19041.4291
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.4291
+BuildVersion: 10.0.19041.4291
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is script-answers/exercise12_2.txt
+PS D:\Programming\github\part12-containers-applications> docker run -it ubuntu bash
+docker: error during connect: this error may indicate that the docker daemon is not running: Post "http://%2F%2F.%2Fpipe
+%2Fdocker_engine/v1.24/containers/create": open //./pipe/docker_engine: The system cannot find the file specified.
+See 'docker run --help'.
+PS D:\Programming\github\part12-containers-applications> PS D:\Programming\github\part12-containers-applications> docker run -it ubuntu bash
+PS D:\Programming\github\part12-containers-applications> TerminatingError(Get-Process): "A positional parameter cannot be found that accepts argument 'docker'."
+Get-Process : A positional parameter cannot be found that accepts argument 'docker'.
+At line:1 char:1
++ PS D:\Programming\github\part12-containers-applications> docker run - ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-Process], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.GetProcessCommand
+Get-Process : A positional parameter cannot be found that accepts argument 'docker'.
+At line:1 char:1
++ PS D:\Programming\github\part12-containers-applications> docker run - ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-Process], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.GetProcessCommand
+
+PS D:\Programming\github\part12-containers-applications> docker: error during connect: this error may indicate that the docker daemon is not running: Post "http://%2F%2F.%2Fpipe%2Fdocker_engine/v1.24/containers/create": open //./pipe/docker_engine: The system cannot find the file specified.
+docker: : The term 'docker:' is not recognized as the name of a cmdlet, function, script file, or operable program. Chec
+k the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ docker: error during connect: this error may indicate that the docker ...
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (docker::String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+docker: : The term 'docker:' is not recognized as the name of a cmdlet, function, script file, or operable program. Che
+ck the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ docker: error during connect: this error may indicate that the docker ...
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (docker::String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS D:\Programming\github\part12-containers-applications> docker run -it ubuntu bash
+
+PS D:\Programming\github\part12-containers-applications> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20240424221300
+**********************

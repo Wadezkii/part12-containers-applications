@@ -1,0 +1,52 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240424230045
+Username: DESKTOP-P10ALDR\weeti
+RunAs User: DESKTOP-P10ALDR\weeti
+Configuration Name: 
+Machine: DESKTOP-P10ALDR (Microsoft Windows NT 10.0.19045.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 8612
+PSVersion: 5.1.19041.4291
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.4291
+BuildVersion: 10.0.19041.4291
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is script-answers/exercise12_11.txt
+PS D:\Programming\github\part12-containers-applications\todo-app\todo-backend> docker exec -it <redis-container-name> redis-cli
+At line:1 char:17
++ docker exec -it <redis-container-name> redis-cli
++                 ~
+The '<' operator is reserved for future use.
+At line:1 char:17
++ docker exec -it <redis-container-name> redis-cli
++                 ~
+The '<' operator is reserved for future use.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : RedirectionNotSupported
+
+PS D:\Programming\github\part12-containers-applications\todo-app\todo-backend> docker ps
+CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS         PORTS                    NAMES
+c90bc4223a7e   image     "docker-entrypoint.s…"   3 minutes ago   Up 3 minutes   0.0.0.0:3000->3000/tcp   laughing_shock
+ley
+PS D:\Programming\github\part12-containers-applications\todo-app\todo-backend> docker pull redis
+c16c264be546: Pull complete
+Digest: sha256:c1fc08e7e6cdb912b1a535147da4ea187f29487d3b4cd52cb33ab946badfe1ba
+Status: Downloaded newer image for redis:latest
+docker.io/library/redis:latest
+
+What's Next?
+  View a summary of image vulnerabilities and recommendations → docker scout quickview redis
+PS D:\Programming\github\part12-containers-applications\todo-app\todo-backend> docker run --name my-redis -p 6379:6379 -d redis
+
+PS D:\Programming\github\part12-containers-applications\todo-app\todo-backend> docker exec -it my-redis redis-cli
+
+PS D:\Programming\github\part12-containers-applications\todo-app\todo-backend> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20240424230255
+**********************

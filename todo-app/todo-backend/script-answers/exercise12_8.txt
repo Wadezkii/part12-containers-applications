@@ -1,0 +1,35 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240424225238
+Username: DESKTOP-P10ALDR\weeti
+RunAs User: DESKTOP-P10ALDR\weeti
+Configuration Name: 
+Machine: DESKTOP-P10ALDR (Microsoft Windows NT 10.0.19045.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 21604
+PSVersion: 5.1.19041.4291
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.4291
+BuildVersion: 10.0.19041.4291
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is script-answers/exercise12_8.txt
+PS D:\Programming\github\part12-containers-applications\todo-app\todo-backend> docker exec -it my-mongo mongosh -u root -p example
+    text: 'Increase the number of tools in my toolbelt',
+    done: false
+  },
+  {
+    _id: ObjectId('66296320beeec7717dc934dd'),
+    text: 'Increase the number of tools in my toolbelt',
+    done: false
+  }
+]
+the_database> exit
+PS D:\Programming\github\part12-containers-applications\todo-app\todo-backend> exit
+**********************
+Windows PowerShell transcript end
+End time: 20240424225330
+**********************
